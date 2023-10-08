@@ -1,0 +1,21 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    background-color: lightgray;
+    padding: 5px 40px;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-around;
+}
+
+.icons :first-child{
+  width: 50px;
+}
+
+.icons :last-child{
+    width: 50px;
+  }
