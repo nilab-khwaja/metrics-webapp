@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchMakeup } from '../redux/makeupSlice'
+import { Link } from 'react-router-dom'
 
 const Makeup = () => {
   const dispatch = useDispatch()
@@ -31,18 +32,15 @@ const Makeup = () => {
 
 
   return (  
-    <div>
+    <div> 
       <ul>
         {filteredMakeups.map((makeup) => (
           <li key={makeup.id}>
-            <img src= {makeup.image_link} alt='product-img' width={200} height={200} />
+            <Link to = {`/makeup-detail/${makeup.id}`}>
+            <img src= {makeup.image_link} alt='product-img' width={100} height={100} />
             <h1>{makeup.product_type}</h1>
             <h3>{makeup.brand} , Name: {makeup.name}</h3>
-            <ul>
-              {makeup.product_colors.map((color) =>(
-                <li key={color.hex_value}>{color.colour_name}</li>
-              ))}
-            </ul>
+            </Link>
           </li>
         ))}
       </ul>
