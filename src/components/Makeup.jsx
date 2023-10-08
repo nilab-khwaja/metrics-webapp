@@ -7,6 +7,8 @@ const Makeup = () => {
   const dispatch = useDispatch()
   const {makeups, status, error} = useSelector((state) => state.makeups)
   const [filteredMakeups, setFilteredMakeups] = useState([]);
+  const [searchQuery, setSearchQuery] = useState('');
+
 
   useEffect(()=>{
     dispatch(fetchMakeup())
@@ -17,10 +19,22 @@ const Makeup = () => {
     const filtered = makeups.filter((makeup) => {
       const img = new Image();
       img.src = makeup.image_link;
-      return img.complete && img.width > 0 && img.height > 0;
-    });
+      const isImageValid = img.complete && img.width >0 && img.height>0;
+
+      //check if the product name and brand are not null
+
+      const productName = makeup.name ? makeup.name.toLowerCase(): '';
+      const brandName = makeup.brand ? makeup.brand.toLowerCase(): '';
+      const query = searchQuery.toLowerCase();
+      
+      //apply both filters
+
+      return isImageValid && (productName.includes(query) || brandName.includes(query));
+    })
     setFilteredMakeups(filtered);
-  }, [makeups]);
+  }, [makeups, searchQuery]);
+
+
 
   if(status === 'loading'){
     return <div>Loading....</div>
@@ -33,7 +47,9 @@ const Makeup = () => {
 
   return (  
     <div> 
-      <ul>
+      <input type='search' placeholder='serach by product name or brand' value={searchQuery}
+       onChange={(e) => setSearchQuery(e.target.value)} />
+      <ul className='makeup-container'>
         {filteredMakeups.map((makeup) => (
           <li key={makeup.id}>
             <Link to = {`/makeup-detail/${makeup.id}`}>

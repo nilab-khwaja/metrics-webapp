@@ -22,7 +22,10 @@ const MakupDetail = () => {
         <p><strong>Description: </strong>{makeup.description}</p>
         <p>Colors</p><ul>
                 {makeup.product_colors.map((color) =>(
-                <li key={color.hex_value}>{color.colour_name}</li>
+                <li key={color.hex_value}>
+                    <div style={{backgroundColor:color.hex_value, width:'20px', height: '20px', display:'inline-block'}} ></div>
+                    {color.colour_name}
+                </li>
               ))}
             </ul>
     </div>
