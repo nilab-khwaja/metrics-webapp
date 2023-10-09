@@ -61,8 +61,8 @@
 }
 
 .makeup-item img{
-    width: 80px;
-    height: 80px;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .makeup-item h4{
@@ -108,17 +108,16 @@
     flex-direction: column;
     list-style: none;
     border: solid 1px transparent;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
-    justify-content: space-between;
+    gap:5px;
     align-items: center;
     width:225px;
-    height: 350px;
+    height: 300px;
     margin: 5px;
 }
 
 .makeup-item img{
-    width: 180px;
-    height: 220px;
+    width: 150px;
+    height: 180px;
 }
 
 .makeup-item h4{

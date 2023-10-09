@@ -58,7 +58,7 @@ const Makeup = () => {
           <li key={makeup.id} className='makeup-item'>
             <Link to = {`/makeup-detail/${makeup.id}`} className='item-link'>
             <h4>Product Type: {makeup.product_type}</h4>
-            <img src= {makeup.image_link} alt='product-img' width={100} height={100} />
+            <img src= {makeup.image_link} alt='product-img'/>
             <h3>Brand: {makeup.brand}</h3>
             </Link>
           </li>
