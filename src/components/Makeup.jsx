@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchMakeup } from '../redux/makeupSlice'
 import { Link } from 'react-router-dom'
+import '../styles/makeups.css';
 
 const Makeup = () => {
   const dispatch = useDispatch()
@@ -46,16 +47,19 @@ const Makeup = () => {
 
 
   return (  
-    <div> 
-      <input type='search' placeholder='serach by product name or brand' value={searchQuery}
-       onChange={(e) => setSearchQuery(e.target.value)} />
+    <div className='makeup-body'> 
+      <div className='searchBox'>
+      <input type='search' placeholder='Serach product by its name or brand..' value={searchQuery}
+       onChange={(e) => setSearchQuery(e.target.value)}  className='input-box'/>
+       {/* <div className='searchImg'></div> */}
+       </div>
       <ul className='makeup-container'>
         {filteredMakeups.map((makeup) => (
-          <li key={makeup.id}>
-            <Link to = {`/makeup-detail/${makeup.id}`}>
+          <li key={makeup.id} className='makeup-item'>
+            <Link to = {`/makeup-detail/${makeup.id}`} className='item-link'>
+            <h4>Product Type: {makeup.product_type}</h4>
             <img src= {makeup.image_link} alt='product-img' width={100} height={100} />
-            <h1>{makeup.product_type}</h1>
-            <h3>{makeup.brand} , Name: {makeup.name}</h3>
+            <h3>Brand: {makeup.brand}</h3>
             </Link>
           </li>
         ))}
