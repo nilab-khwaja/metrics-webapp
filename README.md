@@ -67,7 +67,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://beauty-box.onrender.com)
+- [Live Demo Link](https://beauty-494b.onrender.com)
 - [Video Presentation Link]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
