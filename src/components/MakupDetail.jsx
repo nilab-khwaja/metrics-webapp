@@ -5,8 +5,9 @@ import '../styles/makeupdetail.css';
 
 const MakupDetail = () => {
   const { produtId } = useParams();
-  const makeup = useSelector((state) => state.makeups.makeups.find((item) => 
-  item.id === parseInt(produtId, 10)));
+  const makeup = useSelector((state) => {
+    return state.makeups.makeups.find((item) => item.id === parseInt(produtId, 10));
+  });
 
   if (!makeup) {
     return <div>Product not found</div>;
