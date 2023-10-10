@@ -1,8 +1,8 @@
 import React from 'react';
 import { render } from '@testing-library/react';
+import { Provider } from 'react-redux';
 import MakupDetail from '../components/MakupDetail';
 import store from '../redux/store';
-import { Provider } from 'react-redux';
 
 describe('MakupDetail component', () => {
   it('should render correctly', () => {
@@ -21,10 +21,10 @@ describe('MakupDetail component', () => {
     };
 
     const { container } = render(
-        <Provider store={store}>
-          <MakupDetail makeup={makeup} />
-        </Provider>
-      );
-      expect(container).toMatchSnapshot();
-    });
+      <Provider store={store}>
+        <MakupDetail makeup={makeup} />
+      </Provider>,
+    );
+    expect(container).toMatchSnapshot();
   });
+});
