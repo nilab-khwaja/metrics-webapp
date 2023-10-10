@@ -9,8 +9,8 @@ function App() {
     <div className="App">
       <Navbar />
       <Routes>
-        <Route path='/' element={<Makeup />} />
-        <Route path='/makeup-detail/:produtId' element={<MakupDetail/>} />
+        <Route path="/" element={<Makeup />} />
+        <Route path="/makeup-detail/:produtId" element={<MakupDetail />} />
       </Routes>
     </div>
   );

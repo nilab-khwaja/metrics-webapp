@@ -1,10 +1,10 @@
-import { configureStore } from "@reduxjs/toolkit";  
-import makeupReducer from "./makeupSlice";
+import { configureStore } from '@reduxjs/toolkit';
+import makeupReducer from './makeupSlice';
 
 const store = configureStore({
-    reducer: {
-        makeups:makeupReducer,
-    }, 
+  reducer: {
+    makeups: makeupReducer,
+  },
 });
 
-export default store
+export default store;
