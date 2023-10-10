@@ -19,6 +19,7 @@ const MakupDetail = () => {
       </div>
       <h1>{makeup.name}</h1>
       <div className="detail">
+        <div className="image"><img src={makeup.image_link} alt={makeup.name} /></div>
         <ul className="description">
           <li>
             <h3>
@@ -65,7 +66,7 @@ const MakupDetail = () => {
           </li>
 
         </ul>
-        <div className="image"><img src={makeup.image_link} alt={makeup.name} /></div>
+
       </div>
     </div>
   );

@@ -6,7 +6,7 @@ exports[`Navbar component should render correctly 1`] = `
     <img
       alt="logo"
       class="logo"
-      src="logo3.png"
+      src="logo1.png"
     />
     <div
       class="icons"

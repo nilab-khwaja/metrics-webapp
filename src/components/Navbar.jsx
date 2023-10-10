@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGear, faMicrophone } from '@fortawesome/free-solid-svg-icons';
 import '../styles/navbar.css';
-import logo from '../assests/logo3.png';
+import logo from '../assests/logo1.png';
 
 const Navbar = () => (
   <nav>

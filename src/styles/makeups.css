@@ -11,18 +11,16 @@
   width: 100%;
   background-size: cover;
   background-position: center;
-  background-image: url('../assests/beauty.webp');
+  background-image: url('../assests/brush.avif');
   background-repeat: no-repeat;
   border: solid 1px transparent;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 .input-box {
   width: 200px;
   align-items: center;
-  border: 1px solid transparent;
-  box-shadow: 0 0 10px rgba(255, 204, 204, 0.5);
-  border-radius: 20px;
+  border: 3px solid transparent;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   height: 50px;
   margin-top: 60px;
   margin-left: 30px;
@@ -33,56 +31,46 @@
 
 .makeup-container {
   display: flex;
-  flex-direction: column;
-  margin-top: 0;
-  text-decoration: none;
-  background-color: rgb(255, 204, 204);
+  flex-direction: row;
+  flex-wrap: wrap;
   width: 100%;
-  padding: 10px;
+  margin-top: 0;
+  background-color: #fe5395;
+  text-decoration: none;
 }
 
 .makeup-item {
-  list-style-type: none;
-  margin: 5px;
-  align-items: center;
+  width: 50%;
 }
 
 .item-link {
-  text-decoration: none;
+  padding: 20px;
   display: flex;
-  gap: 2px;
-  align-items: center;
-  height: 90px;
+  flex-direction: column;
   list-style: none;
+  gap: 5px;
+  align-items: center;
+  width: auto;
+  height: auto;
   border: solid 1px transparent;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
-  margin: 0 5px;
+  background-color: #fe5395;
+  text-decoration: none;
+  color: #fff;
 }
 
 .item-link:hover {
   transform: scale(1.1);
 }
 
-.makeup-item img {
-  width: 20%;
-  height: 90px;
+.item-link img {
+  width: 100px;
+  height: 120px;
 }
 
-.makeup-item h4 {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-style: italic;
-  text-transform: capitalize;
-  color: rgb(64, 64, 64);
-  width: 50%;
-}
-
-.makeup-item h3 {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-style: italic;
-  text-transform: capitalize;
-  color: rgb(64, 64, 64);
-  font-weight: 900;
-  font-size: 10px;
+.item-link p {
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -91,7 +79,11 @@
     margin-top: 80px;
     margin-left: 40px;
     width: 500px;
-    font-size: 1rem;
+    font-size: 1.4rem;
+  }
+
+  .makeup-item {
+    width: auto;
   }
 
   .makeup-container {
@@ -111,19 +103,13 @@
     border: solid 1px transparent;
     gap: 5px;
     align-items: center;
-    width: 225px;
-    height: 300px;
-    margin: 5px;
+    width: auto;
+    height: auto;
   }
 
   .makeup-item img {
     width: 150px;
     height: 180px;
-  }
-
-  .makeup-item h4 {
-    font-size: 1rem;
-    width: auto;
   }
 
   .makeup-item h3 {

@@ -1,10 +1,6 @@
 .makeup-detail {
   margin-top: 0;
-  color: rgb(64, 64, 64);
-  background-size: cover;
-  background-position: center;
-  background-image: url('../assests/background.avif');
-  background-repeat: no-repeat;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   padding: 10px;
@@ -22,10 +18,9 @@ h1 {
 
 .goBack {
   padding: 15px;
-  background-color: rgb(255, 204, 204);
-  color: rgb(64, 64, 64);
+  background-color: #ec4c8b;
+  color: #fff;
   border: 2px solid transparent;
-  border-radius: 15px;
   width: 10rem;
   font-size: 1rem;
   font-weight: 900;
@@ -58,7 +53,7 @@ h1 {
 .description {
   flex: 1;
   padding-left: 20px;
-  width: 50%;
+  width: auto;
 }
 
 ul {
@@ -69,15 +64,13 @@ ul {
 .colors {
   display: inline-block;
   margin-right: 10px;
-  background-color: #f7f7f7;
   padding: 5px;
   border-radius: 1px;
 }
 
 .description li {
-  border-radius: 20px;
-  border: solid 2px rgb(245, 169, 169);
-  box-shadow: 0 0 30px rgba(255, 204, 204, 0.9);
+  padding: 10px;
+  color: #fff !important;
 }
 
 .description li p {
@@ -92,11 +85,11 @@ ul {
 }
 
 .description li:nth-child(odd) {
-  background-color: rgb(240, 190, 190);
+  background-color: #ff7aad;
 }
 
 .description li:nth-child(even) {
-  background-color: rgb(255, 204, 204);
+  background-color: #ec4c8b;
 }
 
 @media screen and (min-width: 768px) {
@@ -115,7 +108,7 @@ ul {
   .image img {
     width: 320px;
     height: 350px;
-    border: solid 2px rgb(245, 169, 169);
+    border: solid 2px #ec4c8b;
   }
 
   .description {
