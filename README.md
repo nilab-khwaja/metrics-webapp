@@ -68,7 +68,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](https://beauty-494b.onrender.com)
-- [Video Presentation Link]()
+- [Video Presentation Link](https://www.loom.com/share/2eec2d5ac7694729a78fac186af2e1cc?sid=e23ce167-8eab-43de-a54c-c3ea59ec774e)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

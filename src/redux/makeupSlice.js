@@ -8,7 +8,7 @@ const initialState = {
 };
 
 export const fetchMakeup = createAsyncThunk('makeup/fetchMakeup', async () => {
-  const response = await axios.get('http://makeup-api.herokuapp.com/api/v1/products.json');
+  const response = await axios.get('https://makeup-api.herokuapp.com/api/v1/products.json');
 
   const filteredData = response.data
     .filter((makeup) => (
