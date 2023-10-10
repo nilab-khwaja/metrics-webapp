@@ -68,7 +68,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](https://beauty-jsz4.onrender.com)
-- [Video Presentation Link](https://www.loom.com/share/2eec2d5ac7694729a78fac186af2e1cc?sid=e23ce167-8eab-43de-a54c-c3ea59ec774e)
+- [Video Presentation Link](https://www.loom.com/share/9a2cacff8b824745869becd92456e3e7?sid=351b476b-78f7-4fdd-a380-2d856646ab6a)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
