@@ -63,9 +63,7 @@ const MakupDetail = () => {
               ))}
             </ul>
           </li>
-
         </ul>
-
       </div>
     </div>
   );
