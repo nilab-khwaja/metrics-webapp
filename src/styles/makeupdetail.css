@@ -16,21 +16,6 @@ h1 {
   text-align: center !important;
 }
 
-.goBack {
-  padding: 15px;
-  background-color: #ec4c8b;
-  color: #fff;
-  border: 2px solid transparent;
-  width: 10rem;
-  font-size: 1rem;
-  font-weight: 900;
-}
-
-.goBack:hover {
-  cursor: pointer;
-  transform: scale(1, 1);
-}
-
 .detail {
   display: flex;
   flex-direction: column;

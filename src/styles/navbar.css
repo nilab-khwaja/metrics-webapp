@@ -4,7 +4,7 @@ nav {
   justify-content: space-between;
   height: 50px;
   background-color: #ec4c8b;
-  padding: 10px 80px;
+  padding: 10px 40px;
   border: solid 1px transparent;
 }
 
@@ -21,8 +21,29 @@ nav {
   width: 50px;
 }
 
+.back-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
 .logo {
   width: 150px;
   height: 70px;
   border: solid 1px transparent;
+}
+
+.goBack {
+  padding: 10px;
+  background-color: #ec4c8b;
+  color: #fff;
+  width: 60px;
+  border: solid 1px transparent;
+  box-shadow: 0 0 30px rgba(250, 203, 203, 0.9);
+}
+
+.goBack:hover {
+  cursor: pointer;
+  transform: scale(1, 1);
 }

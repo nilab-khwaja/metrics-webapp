@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="/src/assets/logo3.png" alt="Animation" width="150">
+  <img src="/src/assests/logo1.png" alt="Animation" width="150">
 </p
 <a name="readme-top"></a>
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import '../styles/makeupdetail.css';
 
 const MakupDetail = () => {
@@ -14,9 +14,6 @@ const MakupDetail = () => {
 
   return (
     <div className="makeup-detail">
-      <div className="title">
-        <Link to="/"><button type="submit" className="goBack">Go Back</button></Link>
-      </div>
       <h1>{makeup.name}</h1>
       <div className="detail">
         <div className="image"><img src={makeup.image_link} alt={makeup.name} /></div>
