@@ -35,7 +35,7 @@
   flex-wrap: wrap;
   width: 100%;
   margin-top: 0;
-  background-color: #fe5395;
+  background-color: #ec4c8b;
   text-decoration: none;
 }
 
@@ -54,7 +54,7 @@
   height: auto;
   border: solid 1px transparent;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
-  background-color: #fe5395;
+  background-color: #ec4c8b;
   text-decoration: none;
   color: #fff;
 }

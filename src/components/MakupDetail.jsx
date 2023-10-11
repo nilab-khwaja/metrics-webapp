@@ -52,14 +52,13 @@ const MakupDetail = () => {
           <li>
             <h3> Colors: </h3>
             <ul>
-              {makeup.product_colors.map((color, index) => (
+              {makeup.product_colors.map((color) => (
                 <li key={color.hex_value} className="colors">
                   <div style={{
                     backgroundColor: color.hex_value, width: '20px', height: '20px', display: 'inline-block',
                   }}
                   />
                   {color.colour_name}
-                  {index < makeup.product_colors.length - 1 && ','}
                 </li>
               ))}
             </ul>
