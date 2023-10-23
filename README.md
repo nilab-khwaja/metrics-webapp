@@ -164,4 +164,4 @@ Original design idea by [Nelson Sakwa](https://www.behance.net/sakwadesignstudio
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/Chandan-devs-tech/react-capstone-tvmaze/blob/dev/Mit.md) licensed.
+This project is [MIT] licensed.
